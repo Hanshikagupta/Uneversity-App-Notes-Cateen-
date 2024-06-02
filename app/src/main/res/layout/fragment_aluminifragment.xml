@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.aluminifragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="382dp"
+        android:src="@drawable/img_6" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="135dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="400dp"
+        android:src="@drawable/img_7" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/greenbuttongradient"
+        android:text="LinkedIn Profile" />
+
+</FrameLayout>

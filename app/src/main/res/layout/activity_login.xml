@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="5dp"
+    tools:context=".myapplication.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:text="OFFCAMPUS"
+        android:textColor="#FEB06A"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:elevation="5dp"
+        android:text="Ace Your College"
+        android:textColor="#FEB06A"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:elevation="5dp"
+        android:text="Login To Ur Account"
+        android:textColor="#FEB06A"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/emaillogin"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="46dp"
+        android:drawableLeft="@drawable/round_person_24"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/passwordlogin"
+        android:layout_width="319dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/round_lock_24"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="@+id/emaillogin"
+        app:layout_constraintStart_toStartOf="@+id/emaillogin"
+        app:layout_constraintTop_toBottomOf="@+id/emaillogin" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="106dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:text="or"
+        android:textAlignment="center"
+        android:textColor="#FEB06A"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordlogin"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="@+id/passwordlogin"
+        app:layout_constraintTop_toBottomOf="@+id/passwordlogin" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="136dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/greenbuttongradient"
+        android:drawableRight="@drawable/facebook_3_1"
+        android:elevation="5dp"
+        android:text="Facebook"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/hbtubutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hbtubutton"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/greenbuttongradient"
+        android:drawableRight="@drawable/google_icon_2"
+        android:elevation="5dp"
+        android:text="Google"
+
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/greenbuttongradient"
+        android:elevation="5dp"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hbtubutton" />
+
+    <TextView
+        android:id="@+id/dontbutton"
+        android:layout_width="148dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="5dp"
+        android:text="Don't have account ?"
+        android:textColor="#FEB06A"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.profilefragment">
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:text="Edit Profile"
+        android:backgroundTint="@color/textcolor"/>
+
+    <LinearLayout
+        android:layout_width="338dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/profilebackground"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp">
+
+        <TextView
+            android:id="@+id/nameprofile"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="NAME" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="245dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Hanshika Gupta" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="338dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/profilebackground"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp">
+
+        <TextView
+            android:id="@+id/branch"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="BRANCH" />
+
+        <EditText
+            android:id="@+id/branchEditText2"
+            android:layout_width="245dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Electrical Eng." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="338dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/profilebackground"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp">
+
+        <TextView
+            android:id="@+id/college"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="COLLEGE" />
+
+        <EditText
+            android:id="@+id/collegeEdittext2"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Harcourt Butler Technical University" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="338dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/profilebackground"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp">
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="Phone No." />
+
+        <EditText
+            android:id="@+id/phonenoedittext"
+            android:layout_width="245dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="text"
+            android:text="" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/savechanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="SAVE CHANGES" />
+
+</LinearLayout>

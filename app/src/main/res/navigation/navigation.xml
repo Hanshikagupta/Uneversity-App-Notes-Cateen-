@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homefragment">
+
+    <fragment
+        android:id="@+id/homefragment"
+        android:name="com.example.newapplication.fragment.homefragment"
+        android:label="fragment_homefragment"
+        tools:layout="@layout/fragment_homefragment" />
+    <fragment
+        android:id="@+id/canteenfragment"
+        android:name="com.example.newapplication.fragment.canteenfragment"
+        android:label="fragment_canteenfragment"
+        tools:layout="@layout/fragment_canteenfragment" />
+    <fragment
+        android:id="@+id/aluminifragment"
+        android:name="com.example.newapplication.fragment.aluminifragment"
+        android:label="fragment_aluminifragment"
+        tools:layout="@layout/fragment_aluminifragment" />
+    <fragment
+        android:id="@+id/communityfragment"
+        android:name="com.example.newapplication.fragment.communityfragment"
+        android:label="fragment_communityfragment"
+        tools:layout="@layout/fragment_communityfragment" />
+    <fragment
+        android:id="@+id/profilefragment"
+        android:name="com.example.newapplication.fragment.profilefragment"
+        android:label="fragment_profilefragment"
+        tools:layout="@layout/fragment_profilefragment" />
+</navigation>

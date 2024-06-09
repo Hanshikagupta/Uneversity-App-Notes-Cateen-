@@ -141,7 +141,7 @@ class CartFragment : Fragment() {
         foodReference.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 for (foodSnapshot in snapshot.children) {
-                    //get cart item obeject from chid node
+                    //get cart item object from child node
                     val cartItems = foodSnapshot.getValue(CartItems::class.java)
 //add cart item detail to list
                     cartItems?.foodName?.let { foodName.add(it) }

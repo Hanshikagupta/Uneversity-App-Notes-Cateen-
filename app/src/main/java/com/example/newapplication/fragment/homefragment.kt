@@ -47,7 +47,7 @@ class homefragment : Fragment() {
 
          binding=   FragmentHomefragmentBinding.inflate(inflater,container,false)
         binding.textView17.setOnClickListener{
-            openUrl("https://btechgeeks.com/b-tech-first-year-notes")
+            openUrl("http://gharwaale.xyz")
         }
 
         return binding.root

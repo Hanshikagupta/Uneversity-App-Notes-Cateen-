@@ -8,18 +8,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.newapplication.databinding.RecentbuyitemBinding
 
-
-class RecentBuyAdapter (
-    private var context: Context,
-    private var foodNameList :ArrayList<String>,
-    private var  foodImageList :ArrayList<String>,
-    private var foodPriceList :ArrayList<String>,
-    private var foodQuantityList :ArrayList<Int>,
+class RecentBuyAdapter (private var context: Context,
+private var foodNameList :ArrayList<String>,
+private var  foodImageList :ArrayList<String>,
+private var foodPriceList :ArrayList<String>,
+private var foodQuantityList :ArrayList<Int>,
 ):RecyclerView.Adapter<RecentBuyAdapter.RecentViewHolder>(){
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecentViewHolder {
-        val binding=RecentbuyitemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        val binding= RecentbuyitemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return RecentViewHolder(binding)
     }
 
@@ -29,7 +27,7 @@ class RecentBuyAdapter (
     override fun onBindViewHolder(holder: RecentViewHolder, position: Int) {
         holder.bind(position)
     }
-    inner class RecentViewHolder(private val binding: RecentbuyitemBinding):RecyclerView.ViewHolder(binding.root){
+    inner class RecentViewHolder(private val binding: RecentbuyitemBinding): RecyclerView.ViewHolder(binding.root){
         fun bind(position: Int) {
             binding.apply {
                 foodname.text= foodNameList[position]

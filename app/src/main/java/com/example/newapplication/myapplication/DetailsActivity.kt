@@ -52,7 +52,7 @@ class DetailsActivity : AppCompatActivity() {
         val database =FirebaseDatabase.getInstance().reference
         val userId=auth.currentUser?.uid?:""
         // create a cart item object
-        val cartItem =CartItems(foodName.toString(),foodPrice.toString(),foodDescription.toString(),foodImage.toString(), 1)
+        val cartItem =CartItems(foodName.toString(),foodPrice.toString(),foodDescription.toString(),foodImage.toString(), 1,foodIngradient.toString())
 
         //save item to cart
         database.child("user").child(userId).child("CartItems").push().setValue(cartItem).addOnSuccessListener {

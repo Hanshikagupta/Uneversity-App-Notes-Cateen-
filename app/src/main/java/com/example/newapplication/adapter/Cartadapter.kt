@@ -1,7 +1,7 @@
 package com.example.newapplication.adapter
 
 import android.content.Context
-import android.media.MediaPlayer.OnCompletionListener
+
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -115,6 +115,9 @@ class Cartadapter(private  val context: Context,
                 {
                     removeItem(position,uniqueKey)
                 }
+                else {
+                    Toast.makeText(context, "Item key not found", Toast.LENGTH_SHORT).show()
+                }
             }
 
         }
@@ -122,20 +125,28 @@ class Cartadapter(private  val context: Context,
         private fun removeItem(position: Int, uniqueKey: String) {
             if(uniqueKey!=null)
             {
+
                 cartItemReference.child(uniqueKey).removeValue().addOnSuccessListener {
-                    cartItems.removeAt(position)
-                    cartImage.removeAt(position)
-                    cartDescription.removeAt(position)
-                    cartQuantity.removeAt(position)
-                    cartItemPrice.removeAt(position)
-                    cartIngradient.removeAt(position)
-                    Toast.makeText(context,"Item deleted",Toast.LENGTH_SHORT).show()
-                    //update item quantity
-                    itemQuantities= itemQuantities.filterIndexed{ index,i ->index!= position }.toIntArray()
-               notifyItemRemoved(position)
-                    notifyItemRangeChanged(position,cartItems.size)
+                    if (position < cartItems.size) {
+                        cartItems.removeAt(position)
+                        cartImage.removeAt(position)
+                        cartDescription.removeAt(position)
+                        cartQuantity.removeAt(position)
+                        cartItemPrice.removeAt(position)
+                        cartIngradient.removeAt(position)
+                        Toast.makeText(context, "Item deleted", Toast.LENGTH_SHORT).show()
+                        //update item quantity
+                        itemQuantities =
+                            itemQuantities.filterIndexed { index, _ -> index != position }
+                                .toIntArray()
+                        notifyItemRemoved(position)
+                        notifyItemRangeChanged(position, cartItems.size)
+                    }else {
+                        Toast.makeText(context, "Invalid position", Toast.LENGTH_SHORT).show()
+                    }
                 }.addOnFailureListener {
-                    Toast.makeText(context,"failed to delete",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context,"failed to delete",Toast.LENGTH_SHORT).show()
+                    }
                 }
             }
         }
@@ -164,4 +175,3 @@ class Cartadapter(private  val context: Context,
     }
 
 
-}

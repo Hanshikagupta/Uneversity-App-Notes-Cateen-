@@ -14,7 +14,7 @@
         android:theme="@style/Theme.NewApplication"
         tools:targetApi="tiramisu">
         <activity
-            android:name=".myapplication.RecentItems"
+            android:name=".myapplication.RecentOrderItems"
             android:exported="false" />
         <activity
             android:name=".myapplication.DetailsActivity"
@@ -33,7 +33,7 @@
             android:exported="false" />
         <activity
             android:name=".myapplication.firstscreen"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".myapplication.SigninActivity"
             android:exported="false" />
